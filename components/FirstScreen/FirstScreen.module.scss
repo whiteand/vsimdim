@@ -4,7 +4,9 @@
   grid-template-columns:
     calc(var(--grid-horizontal) + var(--grid-large) * 2 + var(--grid-small) * 2)
     1fr;
-  grid-template-rows: 190px 3fr;
+  grid-template-rows:
+    calc(var(--grid-vertical) + var(--grid-large) + var(--grid-small))
+    1fr;
   & > div:first-child {
     border-right: 1px solid #000;
     border-bottom: 1px solid #000;
