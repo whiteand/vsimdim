@@ -1,0 +1,34 @@
+.wrapper {
+  display: flex;
+  justify-content: space-between;
+  padding: 50px 66px 20px 140px;
+}
+
+.paragraph {
+  width: 400px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+  padding-top: 2em;
+}
+
+.buttonLink {
+  display: block;
+  padding: 18px 23px;
+  font-weight: 500;
+  font-size: 25px;
+  line-height: 30px;
+  font-family: "Montserrat", sans-serif;
+  white-space: nowrap;
+  background-color: #ffd500;
+  margin-top: 40px;
+  text-transform: uppercase;
+}
+
+.languages {
+  display: flex;
+  justify-content: flex-end;
+  & > :not(:first-child) {
+    margin-left: 70px;
+  }
+}

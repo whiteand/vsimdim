@@ -1,0 +1,22 @@
+.wrapper {
+  display: grid;
+  height: 100vh;
+  grid-template-columns: 346px 3fr;
+  grid-template-rows: 190px 3fr;
+  & > div:first-child {
+    border-right: 1px solid #000;
+    border-bottom: 1px solid #000;
+  }
+  & > div:nth-child(2) {
+    border-bottom: 1px solid #000;
+  }
+  & > div:nth-child(3) {
+    border-right: 1px solid #000;
+  }
+}
+
+.img {
+  background-image: url("/first-screen-bg.jpg");
+  background-size: cover;
+  height: 100%;
+}
