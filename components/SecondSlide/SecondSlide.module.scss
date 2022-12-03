@@ -1,14 +1,16 @@
 .wrapper {
   display: grid;
-  padding: 160px 206px 160px 66px;
+  padding: calc(var(--grid-small) * 2 + var(--grid-large))
+    calc(var(--grid-large) + var(--grid-small) + var(--grid-horizontal))
+    calc(var(--grid-small) * 2 + var(--grid-large)) var(--grid-horizontal);
   color: #ced9de;
   background-color: #1e1e1e;
-  gap: 20px;
+  gap: var(--grid-small);
   grid-template-columns: 1fr 1fr;
 }
 
 .large {
-  max-width: 680px;
+  flex-grow: 1;
   font-weight: 700;
   font-size: 50px;
   line-height: 61px;
@@ -16,6 +18,7 @@
 }
 
 .small {
+  flex-grow: 1;
   font-weight: 600;
   font-size: 18px;
   line-height: 22px;

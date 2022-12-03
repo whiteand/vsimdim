@@ -1,6 +1,7 @@
 import Head from "next/head";
 import FirstScreen from "../components/FirstScreen/FirstScreen";
 import SecondSlide from "../components/SecondSlide";
+import ThirdSlide from "../components/ThirdSlide";
 
 export default function Home() {
   return (
@@ -12,6 +13,7 @@ export default function Home() {
       </Head>
       <FirstScreen />
       <SecondSlide />
+      <ThirdSlide />
     </>
   );
 }
