@@ -1,0 +1,22 @@
+.wrapper {
+  display: grid;
+  padding: 160px 206px 160px 66px;
+  color: #ced9de;
+  background-color: #1e1e1e;
+  gap: 20px;
+  grid-template-columns: 1fr 1fr;
+}
+
+.large {
+  max-width: 680px;
+  font-weight: 700;
+  font-size: 50px;
+  line-height: 61px;
+  letter-spacing: 0.01em;
+}
+
+.small {
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 22px;
+}

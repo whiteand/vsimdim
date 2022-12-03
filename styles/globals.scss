@@ -24,3 +24,10 @@ a {
   text-decoration: none;
   outline: none;
 }
+
+:root {
+  --grid-large: 120px;
+  --grid-small: 20px;
+  --grid-horizontal: 66px;
+  --grid-vertical: 50px;
+}

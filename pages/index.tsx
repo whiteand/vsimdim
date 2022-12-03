@@ -1,5 +1,6 @@
 import Head from "next/head";
 import FirstScreen from "../components/FirstScreen/FirstScreen";
+import SecondSlide from "../components/SecondSlide";
 
 export default function Home() {
   return (
@@ -10,6 +11,7 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <FirstScreen />
+      <SecondSlide />
     </>
   );
 }

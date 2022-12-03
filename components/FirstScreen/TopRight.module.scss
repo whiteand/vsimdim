@@ -5,11 +5,14 @@
 }
 
 .paragraph {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
   width: 400px;
+  height: 120px;
   font-weight: 500;
   font-size: 16px;
   line-height: 19px;
-  padding-top: 2em;
 }
 
 .buttonLink {
