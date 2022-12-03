@@ -1,14 +1,14 @@
 .wrapper {
   position: relative;
-  padding-top: calc(var(--grid-small) * 3 + var(--grid-large-vertical) * 3);
-  padding-bottom: calc(var(--grid-small) + var(--grid-large-vertical));
+  padding-top: calc(var(--grid-gap) * 3 + var(--grid-row) * 3);
+  padding-bottom: calc(var(--grid-gap) + var(--grid-row));
 }
 .header {
   display: flex;
   grid-area: h;
   justify-content: center;
   align-items: flex-end;
-  height: var(--grid-large-vertical);
+  height: var(--grid-row);
   font-weight: 700;
   font-size: 42px;
   line-height: 51px;
@@ -20,7 +20,7 @@
   display: grid;
   grid-template-columns: 1.5fr 1fr 1fr 2fr 1fr 4fr 0.5fr;
   grid-template-rows: 1fr 1fr 2fr 1fr 2fr;
-  gap: var(--grid-small);
+  gap: var(--grid-gap);
   grid-template-areas:
     "s0 h h s1 s2 i1 x"
     "s0 s3 d d s2 i1 x"

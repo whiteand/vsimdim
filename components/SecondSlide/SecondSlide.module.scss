@@ -1,12 +1,11 @@
 .wrapper {
   display: grid;
-  padding: calc(var(--grid-small) * 2 + var(--grid-large-vertical))
-    calc(var(--grid-large) + var(--grid-small) + var(--grid-horizontal))
-    calc(var(--grid-small) * 2 + var(--grid-large-vertical))
-    var(--grid-horizontal);
+  padding: calc(var(--grid-gap) * 2 + var(--grid-row))
+    calc(var(--grid-column) + var(--grid-gap) + var(--grid-horizontal))
+    calc(var(--grid-gap) * 2 + var(--grid-row)) var(--grid-horizontal);
   color: #ced9de;
   background-color: #1e1e1e;
-  gap: var(--grid-small);
+  gap: var(--grid-gap);
   grid-template-columns: 1fr 1fr;
 }
 

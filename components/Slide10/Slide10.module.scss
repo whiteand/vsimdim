@@ -1,0 +1,31 @@
+.wrapper {
+  background-color: #1e1e1e;
+  color: #ced9de;
+  padding: var(--grid-gap)
+    calc(var(--grid-gap) + var(--grid-column) + var(--grid-horizontal))
+    calc(var(--grid-gap) * 2 + var(--grid-row)) var(--grid-horizontal);
+}
+
+.heading {
+  font-weight: 700;
+  font-size: 50px;
+  line-height: 61px;
+  letter-spacing: 0.01em;
+  height: var(--grid-row);
+  display: flex;
+  align-items: flex-end;
+}
+
+.blocks {
+  margin-top: var(--grid-gap);
+  display: grid;
+  gap: calc(var(--grid-gap) * 4 + var(--grid-column) * 3);
+  grid-template-columns: 1fr 2fr;
+}
+
+.left,
+.right {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+}

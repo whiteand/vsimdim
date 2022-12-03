@@ -1,10 +1,10 @@
 .wrapper {
   padding-left: var(--grid-horizontal);
   padding-top: var(--grid-vertical);
-  padding-bottom: var(--grid-small);
+  padding-bottom: var(--grid-gap);
   display: grid;
-  grid-template-columns: var(--grid-large) var(--grid-large);
-  gap: var(--grid-small);
+  grid-template-columns: var(--grid-column) var(--grid-column);
+  gap: var(--grid-gap);
 }
 
 .circle {

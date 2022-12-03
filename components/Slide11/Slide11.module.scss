@@ -1,0 +1,40 @@
+.wrapper {
+  padding: calc(var(--grid-gap) + var(--grid-row))
+    calc(var(--grid-gap) + var(--grid-column) + var(--grid-horizontal))
+    calc(var(--grid-gap) * 2 + var(--grid-row)) var(--grid-horizontal);
+}
+.grid {
+  display: grid;
+  grid-template-columns: repeat(10, 1fr);
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-areas:
+    "h h h x d d d d y"
+    "h h h x z z z z z"
+    "h h h x w w l l l";
+  height: calc(var(--grid-row) * 3 + var(--grid-gap) * 2);
+  gap: var(--grid-gap);
+}
+
+.heading {
+  font-weight: 700;
+  font-size: 42px;
+  line-height: 51px;
+  letter-spacing: 0.01em;
+  grid-area: h;
+}
+
+.description {
+  grid-area: d;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+}
+
+.link {
+  grid-area: l;
+  background: #ffd500;
+  text-transform: uppercase;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

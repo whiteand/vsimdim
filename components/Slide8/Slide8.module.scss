@@ -1,11 +1,11 @@
 .wrapper {
   position: relative;
-  padding-bottom: calc(var(--grid-small) * 4 + var(--grid-large-vertical) * 3);
+  padding-bottom: calc(var(--grid-gap) * 4 + var(--grid-row) * 3);
   background: #1e1e1e;
   color: #ced9de;
 }
 .header {
-  height: var(--grid-large-vertical);
+  height: var(--grid-row);
   font-weight: 700;
   font-size: 42px;
   line-height: 51px;
@@ -19,8 +19,8 @@
 .galery {
   display: grid;
   padding-left: var(--grid-horizontal);
-  margin-top: calc(var(--grid-large-vertical) + var(--grid-small) * 2);
-  height: calc(var(--grid-large-vertical) * 5 + var(--grid-small) * 4);
+  margin-top: calc(var(--grid-row) + var(--grid-gap) * 2);
+  height: calc(var(--grid-row) * 5 + var(--grid-gap) * 4);
   grid-template-columns: 4fr 1fr 1fr 4.5fr;
   grid-template-rows: 1fr 3fr 1fr;
   grid-template-areas:
@@ -52,8 +52,8 @@
   position: absolute;
   bottom: 0;
   left: 50%;
-  width: calc(var(--grid-large) * 6 + var(--grid-small) * 5);
-  height: calc(var(--grid-large) * 4 + var(--grid-small) * 3);
+  width: calc(var(--grid-column) * 6 + var(--grid-gap) * 5);
+  height: calc(var(--grid-column) * 4 + var(--grid-gap) * 3);
   background-image: url("/integration-3.jpg");
   transform: translate(-50%, 50%);
 }

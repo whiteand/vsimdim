@@ -2,10 +2,10 @@
   position: relative;
   padding-left: var(--grid-horizontal);
   padding-right: var(--grid-horizontal);
-  padding-bottom: calc(var(--grid-small) * 2 + var(--grid-large-vertical));
+  padding-bottom: calc(var(--grid-gap) * 2 + var(--grid-row));
 }
 .header {
-  height: var(--grid-large-vertical);
+  height: var(--grid-row);
   font-weight: 700;
   font-size: 42px;
   line-height: 51px;
@@ -24,8 +24,8 @@
     "c d e f b"
     "c d g f i"
     "x y g z z";
-  height: calc(var(--grid-large-vertical) * 6 + var(--grid-small) * 5);
-  gap: var(--grid-small);
+  height: calc(var(--grid-row) * 6 + var(--grid-gap) * 5);
+  gap: var(--grid-gap);
 }
 
 .description {
@@ -54,10 +54,10 @@
 .image4 {
   position: absolute;
   right: 0;
-  bottom: calc(-1 * var(--grid-small) - var(--grid-large-vertical));
-  height: calc(var(--grid-large-vertical) * 4 + var(--grid-small) * 3);
+  bottom: calc(-1 * var(--grid-gap) - var(--grid-row));
+  height: calc(var(--grid-row) * 4 + var(--grid-gap) * 3);
   width: calc(
-    var(--grid-large) * 3 + var(--grid-small) * 2 + var(--grid-horizontal)
+    var(--grid-column) * 3 + var(--grid-gap) * 2 + var(--grid-horizontal)
   );
   background-image: url("/galery-11.jpg");
   z-index: 1;

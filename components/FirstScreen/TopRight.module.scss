@@ -1,16 +1,16 @@
 .wrapper {
   display: flex;
   justify-content: space-between;
-  padding: var(--grid-vertical) var(--grid-horizontal) var(--grid-small)
-    calc(var(--grid-large) + var(--grid-small));
+  padding: var(--grid-vertical) var(--grid-horizontal) var(--grid-gap)
+    calc(var(--grid-column) + var(--grid-gap));
 }
 
 .paragraph {
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
-  width: calc(var(--grid-large) * 3 + var(--grid-small) * 2);
-  height: var(--grid-large-vertical);
+  width: calc(var(--grid-column) * 3 + var(--grid-gap) * 2);
+  height: var(--grid-row);
   font-weight: 500;
   font-size: 16px;
   line-height: 19px;
@@ -21,8 +21,8 @@
   flex-direction: column;
   justify-content: space-between;
   align-items: flex-end;
-  width: calc(var(--grid-large) * 2 + var(--grid-small));
-  height: var(--grid-large-vertical);
+  width: calc(var(--grid-column) * 2 + var(--grid-gap));
+  height: var(--grid-row);
 }
 
 .buttonLink {
@@ -42,5 +42,5 @@
 .languages {
   display: flex;
   justify-content: space-between;
-  width: var(--grid-large);
+  width: var(--grid-column);
 }

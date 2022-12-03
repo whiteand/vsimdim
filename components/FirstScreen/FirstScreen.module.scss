@@ -1,14 +1,13 @@
 .wrapper {
   display: grid;
   height: calc(
-    var(--grid-vertical) + var(--grid-large-vertical) * 6 + var(--grid-small) *
-      5
+    var(--grid-vertical) + var(--grid-row) * 6 + var(--grid-gap) * 5
   );
   grid-template-columns:
-    calc(var(--grid-horizontal) + var(--grid-large) * 2 + var(--grid-small) * 2)
+    calc(var(--grid-horizontal) + var(--grid-column) * 2 + var(--grid-gap) * 2)
     1fr;
   grid-template-rows:
-    calc(var(--grid-vertical) + var(--grid-large-vertical) + var(--grid-small))
+    calc(var(--grid-vertical) + var(--grid-row) + var(--grid-gap))
     1fr;
   & > div:first-child {
     border-right: 1px solid #000;

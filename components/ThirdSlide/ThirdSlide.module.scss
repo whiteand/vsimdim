@@ -1,6 +1,6 @@
 .wrapper {
   position: relative;
-  height: calc(var(--grid-large-vertical) * 12 + var(--grid-small) * 11);
+  height: calc(var(--grid-row) * 12 + var(--grid-gap) * 11);
   border-bottom: 1px solid #000;
 
   p {
@@ -13,11 +13,11 @@
 .first {
   display: grid;
   position: absolute;
-  gap: var(--grid-small);
-  top: calc(var(--grid-large-vertical) + var(--grid-small));
+  gap: var(--grid-gap);
+  top: calc(var(--grid-row) + var(--grid-gap));
   left: var(--grid-horizontal);
-  width: calc(var(--grid-large) * 5 + var(--grid-small) * 4);
-  height: calc(var(--grid-large-vertical) * 4 + var(--grid-small) * 3);
+  width: calc(var(--grid-column) * 5 + var(--grid-gap) * 4);
+  height: calc(var(--grid-row) * 4 + var(--grid-gap) * 3);
   grid-template-columns: 3fr 2fr;
 
   & > :first-child {
@@ -28,11 +28,11 @@
 .second {
   display: grid;
   position: absolute;
-  top: calc(var(--grid-large-vertical) * 2 + var(--grid-small) * 2);
-  right: calc(var(--grid-large) + var(--grid-small) + var(--grid-horizontal));
-  width: calc(var(--grid-large) * 4 + var(--grid-small) * 3);
-  height: calc(var(--grid-large-vertical) * 4 + var(--grid-small) * 3);
-  gap: var(--grid-small);
+  top: calc(var(--grid-row) * 2 + var(--grid-gap) * 2);
+  right: calc(var(--grid-column) + var(--grid-gap) + var(--grid-horizontal));
+  width: calc(var(--grid-column) * 4 + var(--grid-gap) * 3);
+  height: calc(var(--grid-row) * 4 + var(--grid-gap) * 3);
+  gap: var(--grid-gap);
   grid-template-rows: 4fr 1fr;
 
   & > :first-child {
@@ -45,7 +45,7 @@
   }
   p {
     display: block;
-    width: calc(var(--grid-large) * 3 + var(--grid-small) * 2);
+    width: calc(var(--grid-column) * 3 + var(--grid-gap) * 2);
     text-align: start;
   }
 }
@@ -53,13 +53,13 @@
 .third {
   display: grid;
   position: absolute;
-  top: calc(var(--grid-large-vertical) * 6 + var(--grid-small) * 5);
+  top: calc(var(--grid-row) * 6 + var(--grid-gap) * 5);
   left: 0;
   width: calc(
-    var(--grid-large) * 4 + var(--grid-small) * 3 + var(--grid-horizontal)
+    var(--grid-column) * 4 + var(--grid-gap) * 3 + var(--grid-horizontal)
   );
-  height: calc(var(--grid-large-vertical) * 5 + var(--grid-small) * 4);
-  gap: var(--grid-small);
+  height: calc(var(--grid-row) * 5 + var(--grid-gap) * 4);
+  gap: var(--grid-gap);
   grid-template-rows: 4fr 1fr;
 
   & > :first-child {
@@ -68,7 +68,7 @@
   }
   p {
     padding-left: var(--grid-horizontal);
-    padding-right: calc(var(--grid-large) + var(--grid-small));
+    padding-right: calc(var(--grid-column) + var(--grid-gap));
   }
 }
 
@@ -77,18 +77,18 @@
   justify-content: space-between;
   align-items: flex-end;
   position: absolute;
-  top: calc(var(--grid-large-vertical) * 8 + var(--grid-small) * 8);
+  top: calc(var(--grid-row) * 8 + var(--grid-gap) * 8);
   right: 0;
   width: calc(
-    var(--grid-large) * 5 + var(--grid-small) * 4 + var(--grid-horizontal)
+    var(--grid-column) * 5 + var(--grid-gap) * 4 + var(--grid-horizontal)
   );
-  height: calc(var(--grid-large-vertical) * 4 + var(--grid-small) * 3);
+  height: calc(var(--grid-row) * 4 + var(--grid-gap) * 3);
 
   & > div:first-child {
     display: flex;
     justify-content: flex-end;
     flex-direction: column;
-    flex-basis: calc(var(--grid-large) * 2 + var(--grid-small));
+    flex-basis: calc(var(--grid-column) * 2 + var(--grid-gap));
   }
 
   & > :last-child {
@@ -96,10 +96,10 @@
     background-size: cover;
     height: 100%;
     flex-basis: calc(
-      var(--grid-small) * 2 + var(--grid-large) * 3 + var(--grid-horizontal)
+      var(--grid-gap) * 2 + var(--grid-column) * 3 + var(--grid-horizontal)
     );
   }
   p {
-    height: var(--grid-large-vertical);
+    height: var(--grid-row);
   }
 }

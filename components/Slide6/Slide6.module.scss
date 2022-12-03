@@ -1,10 +1,10 @@
 .wrapper {
-  padding-top: calc(var(--grid-large-vertical) + var(--grid-small));
+  padding-top: calc(var(--grid-row) + var(--grid-gap));
   padding-left: calc(
-    var(--grid-horizontal) + var(--grid-large) + var(--grid-small)
+    var(--grid-horizontal) + var(--grid-column) + var(--grid-gap)
   );
   padding-right: var(--grid-horizontal);
-  padding-bottom: calc(var(--grid-large-vertical) + var(--grid-small) * 2);
+  padding-bottom: calc(var(--grid-row) + var(--grid-gap) * 2);
   border-bottom: 1px solid #000;
 
   h3 {

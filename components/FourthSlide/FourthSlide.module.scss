@@ -1,14 +1,14 @@
 .wrapper {
-  padding: calc(var(--grid-large-vertical) + var(--grid-small) * 2)
-    calc(var(--grid-large) * 2 + var(--grid-small) * 2 + var(--grid-horizontal))
-    calc(var(--grid-large-vertical) + var(--grid-small)) var(--grid-horizontal);
+  padding: calc(var(--grid-row) + var(--grid-gap) * 2)
+    calc(var(--grid-column) * 2 + var(--grid-gap) * 2 + var(--grid-horizontal))
+    calc(var(--grid-row) + var(--grid-gap)) var(--grid-horizontal);
 
   display: flex;
   align-items: flex-endg;
   justify-content: space-between;
 
   h3 {
-    width: calc(var(--grid-large) * 2 + var(--grid-small));
+    width: calc(var(--grid-column) * 2 + var(--grid-gap));
     font-weight: 700;
     font-size: 50px;
     line-height: 61px;
@@ -17,7 +17,7 @@
   }
 
   p {
-    width: calc(var(--grid-large) * 4 + var(--grid-small) * 3);
+    width: calc(var(--grid-column) * 4 + var(--grid-gap) * 3);
     font-weight: 600;
     font-size: 18px;
     line-height: 22px;

@@ -28,8 +28,8 @@ a {
 
 :root {
   --grid-horizontal: 66px;
-  --grid-large: calc((100vw - var(--grid-horizontal) * 2) / 10);
-  --grid-small: 20px;
-  --grid-large-vertical: 120px;
+  --grid-column: calc((100vw - var(--grid-horizontal) * 2) / 10);
+  --grid-gap: 20px;
+  --grid-row: 120px;
   --grid-vertical: 50px;
 }
