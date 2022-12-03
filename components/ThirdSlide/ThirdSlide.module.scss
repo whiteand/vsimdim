@@ -1,6 +1,7 @@
 .wrapper {
   position: relative;
   height: calc(var(--grid-large) * 12 + var(--grid-small) * 11);
+  border-bottom: 1px solid #000;
 
   p {
     font-weight: 500;
@@ -28,13 +29,10 @@
   display: grid;
   position: absolute;
   top: calc(var(--grid-large) * 2 + var(--grid-small) * 2);
-  left: calc(
-    var(--grid-large) * 5 + var(--grid-small) * 5 + var(--grid-horizontal)
-  );
+  right: calc(var(--grid-large) + var(--grid-small) + var(--grid-horizontal));
   width: calc(var(--grid-large) * 4 + var(--grid-small) * 3);
   height: calc(var(--grid-large) * 4 + var(--grid-small) * 3);
   gap: var(--grid-small);
-  grid-template-columns: 1fr;
   grid-template-rows: 4fr 1fr;
 
   & > :first-child {
@@ -49,5 +47,59 @@
     display: block;
     width: calc(var(--grid-large) * 3 + var(--grid-small) * 2);
     text-align: start;
+  }
+}
+
+.third {
+  display: grid;
+  position: absolute;
+  top: calc(var(--grid-large) * 6 + var(--grid-small) * 5);
+  left: 0;
+  width: calc(
+    var(--grid-large) * 4 + var(--grid-small) * 3 + var(--grid-horizontal)
+  );
+  height: calc(var(--grid-large) * 5 + var(--grid-small) * 4);
+  gap: var(--grid-small);
+  grid-template-rows: 4fr 1fr;
+
+  & > :first-child {
+    background-image: url("/galery-3.jpg");
+    background-size: cover;
+  }
+  p {
+    padding-left: var(--grid-horizontal);
+    padding-right: calc(var(--grid-large) + var(--grid-small));
+  }
+}
+
+.fourth {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  position: absolute;
+  top: calc(var(--grid-large) * 8 + var(--grid-small) * 8);
+  right: 0;
+  width: calc(
+    var(--grid-large) * 5 + var(--grid-small) * 4 + var(--grid-horizontal)
+  );
+  height: calc(var(--grid-large) * 4 + var(--grid-small) * 3);
+
+  & > div:first-child {
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: column;
+    flex-basis: calc(var(--grid-large) * 2 + var(--grid-small));
+  }
+
+  & > :last-child {
+    background-image: url("/galery-3.jpg");
+    background-size: cover;
+    height: 100%;
+    flex-basis: calc(
+      var(--grid-small) * 2 + var(--grid-large) * 3 + var(--grid-horizontal)
+    );
+  }
+  p {
+    height: var(--grid-large);
   }
 }
