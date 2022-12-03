@@ -1,3 +1,3 @@
-import Slide7 from "./Slide7";
+import Slide8 from "./Slide8";
 
-export default Slide7;
+export default Slide8;
