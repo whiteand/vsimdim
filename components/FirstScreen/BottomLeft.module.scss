@@ -2,15 +2,13 @@
   div {
     font-weight: 500;
     font-size: 109px;
-    height: var(--grid-large);
+    height: var(--grid-large-vertical);
     display: flex;
     align-items: center;
 
-    transform: translate(
-        var(--grid-horizontal),
-        calc(var(--grid-large) * 4 + var(--grid-small) * 3)
-      )
-      rotate(-90deg);
+    transform: translate(var(--grid-horizontal), 540px) rotate(-90deg);
     transform-origin: top left;
+    filter: invert(1);
+    mix-blend-mode: difference;
   }
 }

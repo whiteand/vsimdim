@@ -1,10 +1,10 @@
 .wrapper {
-  padding: calc(var(--grid-large) + var(--grid-small) * 2)
+  padding: calc(var(--grid-large-vertical) + var(--grid-small) * 2)
     calc(var(--grid-large) * 2 + var(--grid-small) * 2 + var(--grid-horizontal))
-    calc(var(--grid-large) + var(--grid-small)) + var(--grid-horizontal);
+    calc(var(--grid-large-vertical) + var(--grid-small)) var(--grid-horizontal);
 
   display: flex;
-  align-items: flex-end;
+  align-items: flex-endg;
   justify-content: space-between;
 
   h3 {

@@ -1,8 +1,9 @@
 .wrapper {
   display: grid;
-  padding: calc(var(--grid-small) * 2 + var(--grid-large))
+  padding: calc(var(--grid-small) * 2 + var(--grid-large-vertical))
     calc(var(--grid-large) + var(--grid-small) + var(--grid-horizontal))
-    calc(var(--grid-small) * 2 + var(--grid-large)) var(--grid-horizontal);
+    calc(var(--grid-small) * 2 + var(--grid-large-vertical))
+    var(--grid-horizontal);
   color: #ced9de;
   background-color: #1e1e1e;
   gap: var(--grid-small);

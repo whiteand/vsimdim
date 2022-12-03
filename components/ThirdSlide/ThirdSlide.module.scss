@@ -1,6 +1,6 @@
 .wrapper {
   position: relative;
-  height: calc(var(--grid-large) * 12 + var(--grid-small) * 11);
+  height: calc(var(--grid-large-vertical) * 12 + var(--grid-small) * 11);
   border-bottom: 1px solid #000;
 
   p {
@@ -14,10 +14,10 @@
   display: grid;
   position: absolute;
   gap: var(--grid-small);
-  top: calc(var(--grid-large) + var(--grid-small));
+  top: calc(var(--grid-large-vertical) + var(--grid-small));
   left: var(--grid-horizontal);
   width: calc(var(--grid-large) * 5 + var(--grid-small) * 4);
-  height: calc(var(--grid-large) * 4 + var(--grid-small) * 3);
+  height: calc(var(--grid-large-vertical) * 4 + var(--grid-small) * 3);
   grid-template-columns: 3fr 2fr;
 
   & > :first-child {
@@ -28,10 +28,10 @@
 .second {
   display: grid;
   position: absolute;
-  top: calc(var(--grid-large) * 2 + var(--grid-small) * 2);
+  top: calc(var(--grid-large-vertical) * 2 + var(--grid-small) * 2);
   right: calc(var(--grid-large) + var(--grid-small) + var(--grid-horizontal));
   width: calc(var(--grid-large) * 4 + var(--grid-small) * 3);
-  height: calc(var(--grid-large) * 4 + var(--grid-small) * 3);
+  height: calc(var(--grid-large-vertical) * 4 + var(--grid-small) * 3);
   gap: var(--grid-small);
   grid-template-rows: 4fr 1fr;
 
@@ -53,12 +53,12 @@
 .third {
   display: grid;
   position: absolute;
-  top: calc(var(--grid-large) * 6 + var(--grid-small) * 5);
+  top: calc(var(--grid-large-vertical) * 6 + var(--grid-small) * 5);
   left: 0;
   width: calc(
     var(--grid-large) * 4 + var(--grid-small) * 3 + var(--grid-horizontal)
   );
-  height: calc(var(--grid-large) * 5 + var(--grid-small) * 4);
+  height: calc(var(--grid-large-vertical) * 5 + var(--grid-small) * 4);
   gap: var(--grid-small);
   grid-template-rows: 4fr 1fr;
 
@@ -77,12 +77,12 @@
   justify-content: space-between;
   align-items: flex-end;
   position: absolute;
-  top: calc(var(--grid-large) * 8 + var(--grid-small) * 8);
+  top: calc(var(--grid-large-vertical) * 8 + var(--grid-small) * 8);
   right: 0;
   width: calc(
     var(--grid-large) * 5 + var(--grid-small) * 4 + var(--grid-horizontal)
   );
-  height: calc(var(--grid-large) * 4 + var(--grid-small) * 3);
+  height: calc(var(--grid-large-vertical) * 4 + var(--grid-small) * 3);
 
   & > div:first-child {
     display: flex;
@@ -100,6 +100,6 @@
     );
   }
   p {
-    height: var(--grid-large);
+    height: var(--grid-large-vertical);
   }
 }

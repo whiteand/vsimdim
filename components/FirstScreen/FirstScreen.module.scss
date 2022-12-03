@@ -1,13 +1,14 @@
 .wrapper {
   display: grid;
   height: calc(
-    var(--grid-vertical) + var(--grid-large) * 6 + var(--grid-small) * 5
+    var(--grid-vertical) + var(--grid-large-vertical) * 6 + var(--grid-small) *
+      5
   );
   grid-template-columns:
     calc(var(--grid-horizontal) + var(--grid-large) * 2 + var(--grid-small) * 2)
     1fr;
   grid-template-rows:
-    calc(var(--grid-vertical) + var(--grid-large) + var(--grid-small))
+    calc(var(--grid-vertical) + var(--grid-large-vertical) + var(--grid-small))
     1fr;
   & > div:first-child {
     border-right: 1px solid #000;

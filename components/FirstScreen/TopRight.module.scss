@@ -10,7 +10,7 @@
   flex-direction: column;
   justify-content: flex-end;
   width: calc(var(--grid-large) * 3 + var(--grid-small) * 2);
-  height: var(--grid-large);
+  height: var(--grid-large-vertical);
   font-weight: 500;
   font-size: 16px;
   line-height: 19px;
@@ -22,7 +22,7 @@
   justify-content: space-between;
   align-items: flex-end;
   width: calc(var(--grid-large) * 2 + var(--grid-small));
-  height: var(--grid-large);
+  height: var(--grid-large-vertical);
 }
 
 .buttonLink {

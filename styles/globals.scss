@@ -27,8 +27,9 @@ a {
 }
 
 :root {
-  --grid-large: 120px;
-  --grid-small: 20px;
   --grid-horizontal: 66px;
+  --grid-large: calc((100vw - var(--grid-horizontal) * 2) / 10);
+  --grid-small: 20px;
+  --grid-large-vertical: 120px;
   --grid-vertical: 50px;
 }
