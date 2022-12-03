@@ -1,0 +1,52 @@
+.wrapper {
+  padding-top: calc(var(--grid-large-vertical) + var(--grid-small) * 2);
+  padding-left: var(--grid-horizontal);
+  padding-right: var(--grid-horizontal);
+  background-color: #1e1e1e;
+  color: #ced9de;
+}
+
+.twoPhotos {
+  display: grid;
+  grid-template-rows: 1fr 3fr 1fr;
+  grid-template-columns: 5fr 1fr 4fr;
+  height: calc(var(--grid-large-vertical) * 5 + var(--grid-small) * 4);
+  width: 100%;
+  gap: var(--grid-small);
+  grid-template-areas:
+    "a x y"
+    "a x b"
+    "a x z";
+}
+
+.firstPhoto {
+  background-image: url("/galery-4.jpg");
+  background-size: cover;
+  grid-area: a;
+}
+.secondPhoto {
+  background-image: url("/galery-5.jpg");
+  background-size: cover;
+  grid-area: b;
+}
+
+.descriptionPhoto {
+  margin-top: calc(var(--grid-large-vertical) + var(--grid-small) * 2);
+  display: grid;
+  gap: var(--grid-small);
+  height: calc(var(--grid-large-vertical) * 4 + var(--grid-small) * 3);
+  grid-template-rows: 1fr 3fr;
+  grid-template-columns: 3fr 1fr 4fr 2fr;
+  grid-template-areas:
+    "d e p x"
+    "f e p x";
+}
+.desription {
+  grid-area: d;
+}
+
+.photo {
+  grid-area: p;
+  background-image: url("/galery-6.jpg");
+  background-size: cover;
+}
