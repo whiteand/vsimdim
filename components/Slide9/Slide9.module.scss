@@ -1,0 +1,54 @@
+.wrapper {
+  position: relative;
+  padding-top: calc(var(--grid-small) * 3 + var(--grid-large-vertical) * 3);
+  padding-bottom: calc(var(--grid-small) + var(--grid-large-vertical));
+}
+.header {
+  display: flex;
+  grid-area: h;
+  justify-content: center;
+  align-items: flex-end;
+  height: var(--grid-large-vertical);
+  font-weight: 700;
+  font-size: 42px;
+  line-height: 51px;
+  font-family: "Montserrat", sans-serif;
+  letter-spacing: 0.01em;
+}
+
+.wrapper {
+  display: grid;
+  grid-template-columns: 1.5fr 1fr 1fr 2fr 1fr 4fr 0.5fr;
+  grid-template-rows: 1fr 1fr 2fr 1fr 2fr;
+  gap: var(--grid-small);
+  grid-template-areas:
+    "s0 h h s1 s2 i1 x"
+    "s0 s3 d d s2 i1 x"
+    "i2 i2 i2 i2 s2 i1 x"
+    "i2 i2 i2 i2 s2 s4 x"
+    "i2 i2 i2 i2 s2 i3 i3";
+}
+
+.description {
+  grid-area: d;
+}
+
+.image1,
+.image2,
+.image3 {
+  background-size: cover;
+}
+
+.image1 {
+  background-image: url("/mobility-1.jpg");
+  grid-area: i1;
+}
+.image2 {
+  background-image: url("/mobility-2.jpg");
+  grid-area: i2;
+}
+
+.image3 {
+  background-image: url("/mobility-3.jpg");
+  grid-area: i3;
+}

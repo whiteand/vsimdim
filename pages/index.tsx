@@ -6,6 +6,7 @@ import Slide5 from "../components/Slide5";
 import Slide6 from "../components/Slide6";
 import Slide7 from "../components/Slide7";
 import Slide8 from "../components/Slide8/Slide8";
+import Slide9 from "../components/Slide9";
 import ThirdSlide from "../components/ThirdSlide";
 
 export default function Home() {
@@ -24,6 +25,7 @@ export default function Home() {
       <Slide6 />
       <Slide7 />
       <Slide8 />
+      <Slide9 />
     </>
   );
 }
