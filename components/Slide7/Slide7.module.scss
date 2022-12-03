@@ -50,3 +50,15 @@
   background-image: url("/galery-10.jpg");
   grid-area: g;
 }
+
+.image4 {
+  position: absolute;
+  right: 0;
+  bottom: calc(-1 * var(--grid-small) - var(--grid-large-vertical));
+  height: calc(var(--grid-large-vertical) * 4 + var(--grid-small) * 3);
+  width: calc(
+    var(--grid-large) * 3 + var(--grid-small) * 2 + var(--grid-horizontal)
+  );
+  background-image: url("/galery-11.jpg");
+  z-index: 1;
+}

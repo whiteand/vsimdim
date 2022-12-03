@@ -1,0 +1,59 @@
+.wrapper {
+  position: relative;
+  padding-bottom: calc(var(--grid-small) * 4 + var(--grid-large-vertical) * 3);
+  background: #1e1e1e;
+  color: #ced9de;
+}
+.header {
+  height: var(--grid-large-vertical);
+  font-weight: 700;
+  font-size: 42px;
+  line-height: 51px;
+  letter-spacing: 0.01em;
+  font-family: "Montserrat", sans-serif;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+}
+
+.galery {
+  display: grid;
+  padding-left: var(--grid-horizontal);
+  margin-top: calc(var(--grid-large-vertical) + var(--grid-small) * 2);
+  height: calc(var(--grid-large-vertical) * 5 + var(--grid-small) * 4);
+  grid-template-columns: 4fr 1fr 1fr 4.5fr;
+  grid-template-rows: 1fr 3fr 1fr;
+  grid-template-areas:
+    "d d x a"
+    "b y x a"
+    "b y x z";
+}
+
+.description {
+  grid-area: d;
+}
+
+.image1,
+.image2,
+.image3 {
+  background-size: cover;
+}
+
+.image1 {
+  grid-area: a;
+  background-image: url("/integration-1.jpg");
+}
+.image2 {
+  grid-area: b;
+  background-image: url("/integration-2.jpg");
+}
+
+.image3 {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  width: calc(var(--grid-large) * 6 + var(--grid-small) * 5);
+  height: calc(var(--grid-large) * 4 + var(--grid-small) * 3);
+  background-image: url("/integration-3.jpg");
+  transform: translate(-50%, 50%);
+}

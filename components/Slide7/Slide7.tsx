@@ -14,6 +14,7 @@ export default function Slide7() {
           creating it, but also with giving the family back a sense of security
           and comfort.
         </div>
+        <div className={s.image4} />
       </div>
     </div>
   );
