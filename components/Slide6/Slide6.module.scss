@@ -1,0 +1,17 @@
+.wrapper {
+  padding-top: calc(var(--grid-large-vertical) + var(--grid-small));
+  padding-left: calc(
+    var(--grid-horizontal) + var(--grid-large) + var(--grid-small)
+  );
+  padding-right: var(--grid-horizontal);
+  padding-bottom: calc(var(--grid-large-vertical) + var(--grid-small) * 2);
+  border-bottom: 1px solid #000;
+
+  h3 {
+    font-weight: 700;
+    font-size: 50px;
+    line-height: 61px;
+    letter-spacing: 0.01em;
+    max-width: 420px;
+  }
+}
