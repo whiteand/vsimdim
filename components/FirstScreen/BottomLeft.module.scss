@@ -1,10 +1,16 @@
 .wrapper {
   div {
-    display: inline-block;
     font-weight: 500;
     font-size: 109px;
-    line-height: 133px;
-    transform: translateX(107px) translateX(-100%) rotate(-90deg);
-    transform-origin: center right;
+    height: var(--grid-large);
+    display: flex;
+    align-items: center;
+
+    transform: translate(
+        var(--grid-horizontal),
+        calc(var(--grid-large) * 4 + var(--grid-small) * 3)
+      )
+      rotate(-90deg);
+    transform-origin: top left;
   }
 }

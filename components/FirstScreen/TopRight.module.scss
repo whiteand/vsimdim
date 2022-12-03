@@ -1,37 +1,46 @@
 .wrapper {
   display: flex;
   justify-content: space-between;
-  padding: 50px 66px 20px 140px;
+  padding: var(--grid-vertical) var(--grid-horizontal) var(--grid-small)
+    calc(var(--grid-large) + var(--grid-small));
 }
 
 .paragraph {
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
-  width: 400px;
-  height: 120px;
+  width: calc(var(--grid-large) * 3 + var(--grid-small) * 2);
+  height: var(--grid-large);
   font-weight: 500;
   font-size: 16px;
   line-height: 19px;
 }
 
+.right {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-end;
+  width: calc(var(--grid-large) * 2 + var(--grid-small));
+  height: var(--grid-large);
+}
+
 .buttonLink {
   display: block;
-  padding: 18px 23px;
+  width: 100%;
+  padding: 18.5px 0;
   font-weight: 500;
   font-size: 25px;
   line-height: 30px;
   font-family: "Montserrat", sans-serif;
+  text-align: center;
+  text-transform: uppercase;
   white-space: nowrap;
   background-color: #ffd500;
-  margin-top: 40px;
-  text-transform: uppercase;
 }
 
 .languages {
   display: flex;
-  justify-content: flex-end;
-  & > :not(:first-child) {
-    margin-left: 70px;
-  }
+  justify-content: space-between;
+  width: var(--grid-large);
 }

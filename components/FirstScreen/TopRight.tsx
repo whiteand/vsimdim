@@ -7,7 +7,7 @@ export default function TopRight(): JSX.Element {
         Ukrainian charity project We produce mobile houses for the families
         displaced from their homes because of the war in Ukraine.
       </p>
-      <nav>
+      <nav className={s.right}>
         <div className={s.languages}>
           <a>UKR</a>
           <a>ENG</a>

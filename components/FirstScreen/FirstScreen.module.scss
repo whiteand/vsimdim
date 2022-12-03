@@ -1,6 +1,8 @@
 .wrapper {
   display: grid;
-  height: 100vh;
+  height: calc(
+    var(--grid-vertical) + var(--grid-large) * 6 + var(--grid-small) * 5
+  );
   grid-template-columns:
     calc(var(--grid-horizontal) + var(--grid-large) * 2 + var(--grid-small) * 2)
     1fr;
