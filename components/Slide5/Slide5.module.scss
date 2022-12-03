@@ -2,6 +2,7 @@
   padding-top: calc(var(--grid-large-vertical) + var(--grid-small) * 2);
   padding-left: var(--grid-horizontal);
   padding-right: var(--grid-horizontal);
+  padding-bottom: calc(var(--grid-large-vertical) + var(--grid-small) * 2);
   background-color: #1e1e1e;
   color: #ced9de;
 }
