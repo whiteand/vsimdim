@@ -9,7 +9,7 @@ import Slide6 from "../components/Slide6";
 import Slide7 from "../components/Slide7";
 import Slide8 from "../components/Slide8/Slide8";
 import Slide9 from "../components/Slide9";
-import ThirdSlide from "../components/ThirdSlide";
+import Slide3 from "../components/Slide3";
 
 export default function Home() {
   return (
@@ -21,7 +21,7 @@ export default function Home() {
       </Head>
       <FirstScreen />
       <SecondSlide />
-      <ThirdSlide />
+      <Slide3 />
       <FourthSlide />
       <Slide5 />
       <Slide6 />

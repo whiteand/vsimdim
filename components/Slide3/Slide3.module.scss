@@ -1,0 +1,41 @@
+.wrapper {
+  display: grid;
+  grid-template-columns: var(--grid-horizontal) repeat(9, 6fr 1fr) 6fr var(
+      --grid-horizontal
+    );
+  grid-template-rows: repeat(11, 6fr 1fr) 6fr;
+}
+
+.imageWrapper {
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+}
+
+.destroyedRoom {
+  grid-area: 3/2/10/7;
+}
+
+.destroyedRoomDescription {
+  grid-area: 3/8/3/11;
+}
+.sportRoom {
+  grid-area: 5/12/12/19;
+}
+.sportRoomDescription {
+  grid-area: 13/14/13/19;
+}
+.shelter {
+  grid-area: 12/1/20/9;
+}
+.shelterDescription {
+  grid-area: 21/2/21/7;
+}
+.toilet {
+  grid-area: 17/16/24/22;
+}
+.toiletDescription {
+  grid-area: 23/12/23/15;
+}
